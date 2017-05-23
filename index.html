@@ -425,7 +425,7 @@ Reveal.addEventListener( 'customevent', function() {
 
                 multiplex: {
                     // Example values. To generate your own, see the socket.io server instructions.
-                    secret: '14955482814534554311', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+                    secret: 'null', // Obtained from the socket.io server. Gives this (the master) control of the presentation
                     id: '5bff4757af4fdd36', // Obtained from socket.io server
                     url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
                 },
@@ -433,7 +433,7 @@ Reveal.addEventListener( 'customevent', function() {
 				// Optional reveal.js plugins
 				dependencies: [
                     { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
-                    { src: 'plugin/multiplex/master.js', async: true },
+                    { src: 'plugin/multiplex/client.js', async: true },
              //       { src: 'plugin/notes-server/client.js', async: true },
 
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
